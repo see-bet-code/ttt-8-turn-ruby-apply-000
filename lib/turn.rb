@@ -27,7 +27,7 @@ end
 
 
 def position_taken?(board, index)
-  ["X","x","O","o"].includes?(board[index])
+  ["X","x","O","o"].include?(board[index])
 end
 
 
@@ -36,5 +36,5 @@ def input_to_index(user_input)
 end
 
 def move(board, index, char = "X")
-  board[index] = x
+  board[index] = char
 end
